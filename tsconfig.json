@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "strictNullChecks": true,
+    "module": "commonjs",
+    "jsx": "react-jsx",
+    "target": "es2015",
+    "allowJs": true,
+    "baseUrl": "./src",
+    "paths": {
+      "test-utils": ["../jest_config/test-utils"],
+      "@fixtures": ["../jest_config/__fixtures__"],
+      "@assets/*": ["assets/*"],
+      "@store": ["services/Store/store"],
+      "@store/*": ["services/Store/store/*"],
+      "@*": ["./*"]
+    },
+    "lib": ["esnext", "dom"],
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "noEmitOnError": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "pretty": true,
+    "noErrorTruncation": true,
+    "noImplicitAny": true,
+    "skipLibCheck": true
+  },
+  "include": ["./scripts", "./src/", "spec", "./jest_config"],
+  "exclude": ["node_modules", "jest_config/__mocks__", "./node-scripts"],
+  "awesomeTypescriptLoaderOptions": {
+    "transpileOnly": true
+  }
+}
